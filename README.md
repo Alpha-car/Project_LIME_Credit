@@ -6,4 +6,4 @@
 
 
 
-<img width="100%" src="![l_2021082401002900600253461](https://user-images.githubusercontent.com/88402715/136810988-dbed5f33-84a6-42a4-b2a1-05415b33d3d8.jpg)"/>
+<img width="80%" src="https://user-images.githubusercontent.com/88402715/136810988-dbed5f33-84a6-42a4-b2a1-05415b33d3d8.jpg"/>
