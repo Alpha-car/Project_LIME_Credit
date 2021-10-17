@@ -21,6 +21,7 @@
 
 - 시간표 기능
 - 과목 검색 기능
+- To-do List
 - 학교/학급 공지사항 or 급식 안내 기능
 - 나만의 포트폴리오 기능(수시/정시)  
 
@@ -69,6 +70,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
 
 - [2021.10.04] 첫 미팅, App concept 정하기
 - [2021.10.11] 앱 구체적 컨셉 정하기, Notion 생성, 약식 파트 분배
-- [2021.10.17] (예정)  
+- [2021.10.17] 서버(AWS), 앱 이름 & 팀 이름 정하기, 프론트엔드 프로토타입 검토(오븐), Git 생성, Ground Rule
+- [2021.10.28] (예정)
 <br/>
 <br/>
