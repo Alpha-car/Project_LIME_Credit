@@ -14,6 +14,7 @@
 		1F1289979281F34566F76DF2 /* libPods-LimeFront-LimeFrontTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D44D863103FC0A0176DFC /* libPods-LimeFront-LimeFrontTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E041CA9830BE587D450EF11E /* libPods-LimeFront.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B61FA52B37CB2D8F69B2405C /* libPods-LimeFront.a */; };
+		E900B41F2748D7B90092B1C1 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E900B41E2748D7B90092B1C1 /* Fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B61FA52B37CB2D8F69B2405C /* libPods-LimeFront.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LimeFront.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41A1497D2C94B7A0B91EEC9 /* Pods-LimeFront-LimeFrontTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LimeFront-LimeFrontTests.release.xcconfig"; path = "Target Support Files/Pods-LimeFront-LimeFrontTests/Pods-LimeFront-LimeFrontTests.release.xcconfig"; sourceTree = "<group>"; };
 		E74D44D863103FC0A0176DFC /* libPods-LimeFront-LimeFrontTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LimeFront-LimeFrontTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900B41E2748D7B90092B1C1 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -114,7 +116,6 @@
 				152B2AA9348EF02AB0764773 /* Pods-LimeFront-LimeFrontTests.debug.xcconfig */,
 				E41A1497D2C94B7A0B91EEC9 /* Pods-LimeFront-LimeFrontTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +129,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E900B41E2748D7B90092B1C1 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* LimeFront */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LimeFrontTests */,
@@ -160,7 +162,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				23471DB0EE867AC3FC108DF3 /* [CP] Embed Pods Frameworks */,
 				2F6B26CF3D951C94FDC4C0E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -183,7 +184,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5DA8390CE42FB0EA56D34649 /* [CP] Embed Pods Frameworks */,
 				C3A58ACEFCB089F9F8C00D73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -243,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E900B41F2748D7B90092B1C1 /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -264,23 +265,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		23471DB0EE867AC3FC108DF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LimeFront-LimeFrontTests/Pods-LimeFront-LimeFrontTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LimeFront-LimeFrontTests/Pods-LimeFront-LimeFrontTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LimeFront-LimeFrontTests/Pods-LimeFront-LimeFrontTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		2F6B26CF3D951C94FDC4C0E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -341,23 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DA8390CE42FB0EA56D34649 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LimeFront/Pods-LimeFront-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LimeFront/Pods-LimeFront-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LimeFront/Pods-LimeFront-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3A58ACEFCB089F9F8C00D73 /* [CP] Copy Pods Resources */ = {
