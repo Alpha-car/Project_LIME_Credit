@@ -5,13 +5,6 @@ import Impact from './assets/fonts/Impact.ttf';
 import Hangul from './assets/fonts/BinggraeMelona.otf';
 
 export default class CustomButton extends Component{
-  static defaultProps = {
-    title: 'untitled',
-    buttonColor: '#000',
-    titleColor: '#fff',
-    onPress: () => null,
-  }
-
   constructor(props){
     super(props);
   }
@@ -42,7 +35,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontFamily: 'Impact',
+    fontFamily: './assets/fonts/Impact.ttf',
     fontStyle: 'italic',
     letterSpacing: 0
   }
