@@ -4,7 +4,7 @@ import {Button} from "react-native";
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Home from './home';
+import Login from './Login';
 import TimeSchedule from './TimeSchedule';
 
 const Stack = new createNativeStackNavigator();
@@ -12,9 +12,9 @@ const Stack = new createNativeStackNavigator();
 export default class App extends Component {
     render() {
         return (
-            <NavigationContainer>
+            <NavigationContainer independent={true}>
                 <Stack.Navigator>
-                    <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+                    <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
                     <Stack.Screen name="TimeSchedule" component={TimeSchedule} 
                         options={{ 
                             title: '시간표 추가',
