@@ -66,6 +66,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
 <br/>
 <br/>
 
+
 ## 개발 정책
 
  [Development Rule]
@@ -78,6 +79,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
 * git branch rules
  - dev: 개발 단계에서 사용하는 브랜치
  - release: 기능 테스트를 통과한 patch와 긴급 bug-fix patch만 들어갈 수 있는 브랜치
+
 
 ## 개발 기록
 
