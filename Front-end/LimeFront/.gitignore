@@ -3,6 +3,7 @@
 .DS_Store
 
 #files
+package-lock.json
 *.lock
 
 # Xcode
