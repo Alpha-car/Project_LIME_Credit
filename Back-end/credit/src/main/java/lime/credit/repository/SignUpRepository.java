@@ -1,8 +1,7 @@
 package lime.credit.repository;
 
-import org.springframework.stereotype.Repository;
+import lime.credit.service.model.User;
+import org.springframework.data.repository.CrudRepository;
 
-@Repository
-public class SignUpRepository {
-    // DB에 저장
+public interface SignUpRepository extends CrudRepository<User, Long> {
 }

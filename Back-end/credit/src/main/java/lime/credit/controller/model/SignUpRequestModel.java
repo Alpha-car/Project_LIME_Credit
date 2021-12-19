@@ -1,6 +1,14 @@
 package lime.credit.controller.model;
 
+import lime.credit.service.model.User;
+import lombok.Data;
+
+@Data
 public class SignUpRequestModel {
-    // 이름
-    // 나이
+    private String email;
+    private String password;
+
+    public User toUser() {
+        return new User(email, password);
+    }
 }
