@@ -1,13 +1,10 @@
-package lime.credit.service.model;
+package lime.credit.repository.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @ToString
@@ -16,10 +13,13 @@ import javax.persistence.Id;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
+    @Column(name = "user_id")
     private Long id;
     private String email;
     private String password;
+    private String name;
+    private String highSchool;
 
     public User(String email, String password) {
         this.email = email;

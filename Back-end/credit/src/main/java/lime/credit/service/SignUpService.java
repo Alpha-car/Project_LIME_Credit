@@ -1,7 +1,7 @@
 package lime.credit.service;
 
 import lime.credit.repository.SignUpRepository;
-import lime.credit.service.model.User;
+import lime.credit.repository.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

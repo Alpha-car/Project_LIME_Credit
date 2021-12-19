@@ -1,6 +1,6 @@
 package lime.credit.controller.model;
 
-import lime.credit.service.model.User;
+import lime.credit.repository.model.User;
 import lombok.Data;
 
 @Data
