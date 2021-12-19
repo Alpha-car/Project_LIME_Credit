@@ -66,11 +66,26 @@ And of course Dillinger itself is open source with a [public repository][dill]
 <br/>
 <br/>
 
+
+## 개발 정책
+
+ [Development Rule]
+
+* [tag] category - [Feature]: 새로운 기능을 추가하는 경우
+ - [Update]: 기존 기능을 변경하는 경우
+ - [Test]: 테스트용 패치의 경우
+ - [Bug]: 이슈/문제를 해결하는 경우
+
+* git branch rules
+ - dev: 개발 단계에서 사용하는 브랜치
+ - release: 기능 테스트를 통과한 patch와 긴급 bug-fix patch만 들어갈 수 있는 브랜치
+
+
 ## 개발 기록
 
 - [2021.10.04] 첫 미팅, App concept 정하기
 - [2021.10.11] 앱 구체적 컨셉 정하기, Notion 생성, 약식 파트 분배
 - [2021.10.17] 서버(AWS), 앱 이름 & 팀 이름 정하기, 프론트엔드 프로토타입 검토(오븐), Git 생성, Ground Rule
-- [2021.10.28] (예정)
+- [2021.11.28] Git 사용법 공유, 개발 정책 
 <br/>
 <br/>
