@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
+import { Settings, LoginManager, Profile } from 'react-native-fbsdk-next';
+
+// Ask for consent first if necessary
+// Possibly only do this for iOS if no need to handle a GDPR-type flow
+Settings.initializeSDK();
 
 import CustomButton from './CustomButton';
 import Credit_Logo from './assets/images/Credit_Logo.png';
@@ -17,14 +22,47 @@ export default class Home extends Component {
                     />
                 </View>
 
-                <View style={styles.content}></View>
-
                 <View style={styles.footer}>
                     <CustomButton
                         buttonColor={'#BBD64D'}
                         title="로그인"
                         // when click the button
                         onPress={() => alert('회원가입 단추를 클릭하였다.')}/>
+                    <CustomButton/>
+                </View>
+
+                <View style={styles.footer}>
+                    <CustomButton
+                        buttonColor={'#BBD64D'}
+                        title="페이스북 로그인"
+                        // when click the button
+                        onPress={() =>
+                            LoginManager.logInWithPermissions(["public_profile"]).then(
+                                function(result) {
+                                    if (result.isCancelled) {
+                                        alert("Login cancelled");
+                                    } else {
+                                        alert(
+                                            "Login success with permissions: " +
+                                            result.grantedPermissions.toString()
+                                        );
+                                        Profile.getCurrentProfile().then(
+                                            function(currentProfile) {
+                                                if (currentProfile) {
+                                                    alert("The current logged user is: " +
+                                                        currentProfile.name
+                                                        + ". His profile id is: " +
+                                                        currentProfile.userID
+                                                    );
+                                                }
+                                            }
+                                        );
+                                    }
+                                },
+                                function(error) {
+                                    alert("Login fail with error: " + error);
+                                }
+                            )}/>
                     <CustomButton/>
                 </View>
 
