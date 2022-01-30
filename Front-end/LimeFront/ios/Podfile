@@ -19,6 +19,11 @@ target 'LimeFront' do
     # Pods for testing
   end
 
+  #use_flipper!({ 'Flipper' => '0.74.0' })
+  #  post_install do |installer|
+  #      flipper_post_install(installer)
+  #  end
+  
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
