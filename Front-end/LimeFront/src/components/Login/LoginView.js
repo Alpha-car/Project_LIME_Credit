@@ -2,14 +2,13 @@ import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import { Settings, LoginManager, Profile } from 'react-native-fbsdk-next';
 
-// Ask for consent first if necessary
-// Possibly only do this for iOS if no need to handle a GDPR-type flow
+// 이 페이지는 로그인 창과 메인 화면 연결이 아직 안 되어있기 때문에 만들어놓은 임시 페이지입니다.
 Settings.initializeSDK();
 
 import CustomButton from './CustomButton';
-import Credit_Logo from './assets/images/Credit_Logo.png';
+import Credit_Logo from '../assets/images/Credit_Logo.png';
 
-export default class Home extends Component {
+export default class LoginView extends Component {
     render() {
         return (
             <View style={styles.container}>

@@ -1,8 +1,8 @@
 // CustomButton
 import React, { Component } from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import Impact from './assets/fonts/Impact.ttf';
-import Hangul from './assets/fonts/BinggraeMelona.otf';
+import Impact from '../assets/fonts/Impact.ttf';
+import Hangul from '../assets/fonts/BinggraeMelona.otf';
 
 export default class CustomButton extends Component{
   constructor(props){
