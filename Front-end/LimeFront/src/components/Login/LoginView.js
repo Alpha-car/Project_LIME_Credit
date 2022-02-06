@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import { Settings, LoginManager, Profile } from 'react-native-fbsdk-next';
+import HelloApi from '../../api/HelloApi';
 
 // 이 페이지는 로그인 창과 메인 화면 연결이 아직 안 되어있기 때문에 만들어놓은 임시 페이지입니다.
 Settings.initializeSDK();
@@ -26,8 +27,9 @@ export default class LoginView extends Component {
                         buttonColor={'#BBD64D'}
                         title="로그인"
                         // when click the button
-                        onPress={() => alert('회원가입 단추를 클릭하였다.')}/>
-                    <CustomButton/>
+                        onPress={() => HelloApi.getHello()
+                            .then(response => response.text())
+                            .then(data => alert(data))}/>
                 </View>
 
                 <View style={styles.footer}>
@@ -62,7 +64,6 @@ export default class LoginView extends Component {
                                     alert("Login fail with error: " + error);
                                 }
                             )}/>
-                    <CustomButton/>
                 </View>
 
                 <View style={styles.footer}>
@@ -71,7 +72,6 @@ export default class LoginView extends Component {
                         title="시간표로 이동"
                         // when click the button
                         onPress={() => this.props.navigation.navigate('TimeSchedule')}/>
-                    <CustomButton/>
                 </View>
             </View>
         );
