@@ -71,7 +71,14 @@ export default class LoginView extends Component {
                         buttonColor={'#BBD64D'}
                         title="시간표로 이동"
                         // when click the button
-                        onPress={() => this.props.navigation.navigate('TimeSchedule')}/>
+                        onPress={() => this.props.navigation.navigate('Main')}/>
+                </View>
+                <View style={styles.footer}>
+                    <CustomButton
+                        buttonColor={'#BBD64D'}
+                        title="회원가입"
+                        // when click the button
+                        onPress={() => this.props.navigation.navigate('SignUp')}/>
                 </View>
             </View>
         );

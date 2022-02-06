@@ -6,10 +6,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 //Screens
 import Timetable from './Timetable/TimeTableView'
 import Login from './Login/LoginView'
+import SignUp from './SignUp/SignUpView';
 
 //Screen names
 const TimetableName = "Main";
 const LoginName = "Login";
+const SignUpName = "SignUp";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,28 +21,28 @@ export default function MainContainer() {
             <Tab.Navigator
                 initialRouteName={TimetableName}
                 screenOptions={({ route }) => ({
-                tabBarIcon: ({ focused, color, size }) => {
-                    let iconName;
-                    let rn = route.name;
+                    tabBarIcon: ({ focused, color, size }) => {
+                        let iconName;
+                        let rn = route.name;
 
-                    if (rn === TimetableName) {
-                        iconName = focused ? 'home' : 'home-outline'
-                    } else if (rn === LoginName) {
-                        iconName = focused ? 'settings' : 'settings-outline'
-                    }
+                        if (rn === TimetableName) {
+                            iconName = focused ? 'home' : 'home-outline'
+                        } else if (rn === LoginName) {
+                            iconName = focused ? 'settings' : 'settings-outline'
+                        }
 
-                    return <Ionicons name={iconName} size={size} color={color} />;
-                },
+                        return <Ionicons name={iconName} size={size} color={color} />;
+                    },
+                    activeTintColor: 'tomato',
+                    inactiveTintColor: 'grey',
+                    labelStyle: { paddingBottom: 10, fontSize: 10 },
+                    style: { padding: 10, height: 70}
                 })}
-                screenOptions={{
-                activeTintColor: 'tomato',
-                inactiveTintColor: 'grey',
-                labelStyle: { paddingBottom: 10, fontSize: 10 },
-                style: { padding: 10, height: 70}
-                }}>
+                >
 
                 <Tab.Screen name={TimetableName} component={Timetable} />
                 <Tab.Screen name={LoginName} component={Login} />
+                <Tab.Screen name={SignUpName} component={SignUp} />
 
             </Tab.Navigator>
         </NavigationContainer>
